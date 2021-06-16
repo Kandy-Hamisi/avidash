@@ -16,12 +16,16 @@
     <script src="js/sb-admin-2.min.js"></script>
 
     <!-- Datatable scripts -->
-    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
-    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
-
+    <!-- <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script> -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css"> -->
+    <link rel="stylesheet" href="vendor/DataTable/DataTables-1.10.25/css/jquery.dataTables.css">
+  
+<!-- <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script> -->
+<script src="vendor/DataTable/DataTables-1.10.25/js/jquery.dataTables.js"></script>
 
     <!-- dataTables css link -->
-    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <!-- <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet"> -->
 
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
@@ -167,5 +171,12 @@
             </div>
         </div>
     </div>
+
+    <script>
+        $(document).ready( function () {
+    $('#dataTable').DataTable();
+} );
+    
+    </script>
 </body>
 </html>
